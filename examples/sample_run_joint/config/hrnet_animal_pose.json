@@ -2,13 +2,13 @@
     "MODEL_TYPE": "MT_MLM_ANIMAL_POSE_HRNET",
     "SAMPLE_IVPS_ALGO_WIDTH": 960,
     "SAMPLE_IVPS_ALGO_HEIGHT": 540,
-    "MODEL_PATH": "./models/yolov5n_nv12.joint",
+    "MODEL_PATH": "/home/models/yolov5s_sub_nv12_11.joint",
     "MODEL_MINOR": {
-        "MODEL_PATH": "./models/hrnet_animal_pose_nv12.joint"
+        "MODEL_PATH": "/home/models/hrnet_animal_pose_nv12.joint"
     },
     "MODEL_MAJOR": {
         "MODEL_TYPE": "MT_DET_YOLOV5",
-        "MODEL_PATH": "./models/yolov5n_nv12.joint",
+        "MODEL_PATH": "/home/models/yolov5s_sub_nv12_11.joint",
         "ANCHORS": [
             10.0,
             13.0,

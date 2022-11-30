@@ -12,7 +12,7 @@ extern "C"
     //给sipeed的python包用的
     typedef int (*result_callback_for_sipeed_py)(void *, sample_run_joint_results *);
     result_callback_for_sipeed_py g_cb_results_sipeed_py = NULL;
-    int register_result_callback(result_callback_for_sipeed_py cb) { g_cb_results_sipeed_py = cb; }
+    int register_result_callback(result_callback_for_sipeed_py cb) { g_cb_results_sipeed_py = cb; return 0; }
 }
 
 static std::map<std::string, int> ModelTypeTable = {

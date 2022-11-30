@@ -40,7 +40,7 @@ message(STATUS "BSP_MSP_DIR = ${BSP_MSP_DIR}")
 option(SIPY_BUILD "build *.so for sipeed python package" OFF)
 if (SIPY_BUILD)
     set(SIPY_SOVERSION 1)
-    set(SIPY_VERSION ${SIPY_SOVERSION}.0.1)
+    set(SIPY_VERSION ${SIPY_SOVERSION}.0.2)
 endif()
 
 add_subdirectory(examples/sample_vin_ivps_joint_venc_rtsp_vo)

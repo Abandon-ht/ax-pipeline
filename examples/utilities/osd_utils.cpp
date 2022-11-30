@@ -30,7 +30,7 @@ extern "C"
     //给sipeed的python包用的
     typedef int (*display_callback_for_sipeed_py)(int, int, int, char **);
     display_callback_for_sipeed_py g_cb_display_sipeed_py = NULL;
-    int register_display_callback(display_callback_for_sipeed_py cb) { g_cb_display_sipeed_py = cb; }
+    int register_display_callback(display_callback_for_sipeed_py cb) { g_cb_display_sipeed_py = cb; return 0; }
 }
 
 void genImg(int charlen, float fontscale, int thickness, osd_utils_img *out)
@@ -308,4 +308,5 @@ int freeObjs(sample_run_joint_results *results)
             results->mObjects[i].mYolov5Mask.data = nullptr;
         }
     }
+    return 0;
 }
